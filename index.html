@@ -1,154 +1,245 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Desc. pag. david">
-    <meta name="robots" content="index, follow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Desc. pag. david" />
+    <meta name="robots" content="index, follow" />
     <title>Tecnomachine S.A.</title>
-    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/phone.css ">
-</head>
-<body>
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/phone.css" />
+  </head>
+  <body>
     <header>
-        <section>
-            <a href=""><img src="./images/burger_menu.svg" alt=""></a>
-            <figure><img src="./images/logo.svg" alt="logo"></figure>
-        </section>
-        <section>
-            <nav>
-                <ul>
-                    <li>Inicio</li>
-                    <li>Sobre nosotros</li>
-                    <li>Servicios</li>
-                </ul>
-            </nav>
-        </section>
+      <div class="menu">
+        <!-- menu movil visible -->
+        <button class="menu__button" id="menu__button">
+          <img src="./images/burger_menu.svg" alt="menu" />
+        </button>
+        <figure class="menu__logo">
+          <img src="./images/logo.svg" alt="logo" />
+        </figure>
+      </div>
+      <!-- fin menu movil visible -->
+      <nav class="menu-links" id="menu-links">
+        <!-- links menu -->
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Servicios</a></li>
+        </ul>
+      </nav>
+      <!-- fin links menu -->
     </header>
-    <figure><img class="banner-top" src="./images/banner.jpg" alt="banner-fondo"></figure>
+    <!-- fin header -->
     <main>
-        <section>
-            <figure><img src="./images/logo.svg" alt="logo-banner"></figure>
-            <h1>Soluciones en electromecánica</h1>
-            <p>Reparación, venta y mantenimiento de equipos eléctricos</p>
-            <form action="">
-                <h2>Contáctenos</h2>
-                <label>
-                    <span>Nombre</span>
-                    <input type="text" autocomplete="name" minlength="2" maxlength="16" required>
-                </label><br>
-                <label>
-                    <span>Apellido</span>
-                    <input type="text" autocomplete="family-name" minlength="2" maxlength="16" required>
-                </label><br>
-                <label>
-                    <span>Correo electrónico</span>
-                    <input type="email" autocomplete="email" required>
-                </label><br>
-                <label>
-                    <span>Empresa u Organización</span>
-                    <input type="text" autocomplete="organization" required>
-                </label><br>
-                <label>
-                    <span>Teléfono</span>
-                    <input type="tel" minlength="3" maxlength="3" autocomplete="tel-area-code" required>
-                    <input type="tel" minlength="7" maxlength="7" autocomplete="tel-local" required>
-                </label><br>
-                <label>
-                    <span>Servicio a solicitar</span>
-                    <select name="" id="">
-                        <option disabled selected>Elegir un servicio</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </label><br>
-                <button>Enviar</button>
-            </form>
-            <a href="#"><img src="./images/down_arrow.svg" alt="drop-down"></a>
-        </section>
-        <section>
-            <div></div>
-            <h2>Sobre nosotros</h2>
-            <article>
-                <figure><img src="" alt=""><img src="" alt=""><img src="" alt=""></figure>
-                <h3>Misión</h3>
-                <p>Ser referencia técnica en nuestras áreas de acción: reparaciones y montajes electromecánicos, embobinado y  otros trabajos en nuestra área; generando valor para nuestros accionistas, nuestros trabajadores y nuestro entorno.</p>
-            </article>
-            <article>
-                <figure><img src="" alt=""><img src="" alt=""></figure>
-                <h3>Visión</h3>
-                <p>Ser una empresa líder local y nacional, comprometida con un alto estándar de calidad y  con la satisfacción de nuestros clientes</p>
-            </article>
-            <article>
-                <figure><img src="" alt=""><img src="" alt=""></figure>
-                <h3>Valores</h3>
-                <p>Honestidad, Responsabilidad y Ética profesional como pilares, en conjunción con esfuerzo y constancia , manteniéndonos firmes a nuestros principios incluso en las situaciones más adversas que podamos encontrar.</p>
-            </article>
-        </section>
-        <section>
-            <h2>Servicios</h2>
-            <article>
-                <figure><img src="" alt=""></figure>
-                <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
-            <article>
-                <figure><img src="" alt=""></figure>
-                <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
-            <article>
-                <figure><img src="" alt=""></figure>
-                <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
-            <article>
-                <figure><img src="" alt=""></figure>
-                <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
-            <article>
-                <figure><img src="" alt=""></figure>
-                <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
-            <article>
-                <figure><img src="" alt=""></figure>
-                <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
-        </section>
+      <picture class="banner"
+        ><!--banner-->
+        <source media="(min-width:1025px)" srcset=".imgs/banner-xlarge.jpg" />
+        <source media="(min-width:769px)" srcset=".imgs/banner-large.jpg" />
+        <source media="(min-width:481px)" srcset=".imgs/banner-medium.jpg" />
+        <img
+          class="banner__img"
+          src="./images/banner-small.jpg"
+          alt="banner-fondo"
+        /> 
+      </picture><!--fin banner-->
+      <section class="presentation">
+        <figure class="presentation__logo">
+          <img src="./images/logo.svg" alt="logo-banner" />
+        </figure>
+        <h1>Soluciones en <br> electromecánica</h1>
+        <hr>
+        <p>Reparación, venta y mantenimiento de <br> equipos eléctricos</p>
+        <form class="form-contact" action="">
+          <h2>Contáctenos</h2>
+          <label>
+            <span>Nombre</span>
+            <input
+              type="text"
+              autocomplete="name"
+              minlength="2"
+              maxlength="16"
+              required
+            /> </label
+          ><br />
+          <label>
+            <span>Apellido</span>
+            <input
+              type="text"
+              autocomplete="family-name"
+              minlength="2"
+              maxlength="16"
+              required
+            /> </label
+          ><br />
+          <label>
+            <span>Correo electrónico</span>
+            <input type="email" autocomplete="email" required /> </label
+          ><br />
+          <label>
+            <span>Empresa u Organización</span>
+            <input type="text" autocomplete="organization" required /> </label
+          ><br />
+          <label>
+            <span>Teléfono</span>
+            <input
+              type="tel"
+              minlength="3"
+              maxlength="3"
+              autocomplete="tel-area-code"
+              required
+            />
+            <input
+              type="tel"
+              minlength="7"
+              maxlength="7"
+              autocomplete="tel-local"
+              required
+            /> </label
+          ><br />
+          <label>
+            <span>Servicio a solicitar</span>
+            <select name="" id="">
+              <option disabled selected>Elegir un servicio</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select> </label
+          ><br />
+          <button>Enviar</button>
+        </form>
+        <a href="#"><img src="./images/down_arrow.svg" alt="drop-down" /></a>
+      </section>
+      <section>
+        <div></div>
+        <h2>Sobre nosotros</h2>
+        <article>
+          <figure>
+            <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+          </figure>
+          <h3>Misión</h3>
+          <p>
+            Ser referencia técnica en nuestras áreas de acción: reparaciones y
+            montajes electromecánicos, embobinado y otros trabajos en nuestra
+            área; generando valor para nuestros accionistas, nuestros
+            trabajadores y nuestro entorno.
+          </p>
+        </article>
+        <article>
+          <figure><img src="" alt="" /><img src="" alt="" /></figure>
+          <h3>Visión</h3>
+          <p>
+            Ser una empresa líder local y nacional, comprometida con un alto
+            estándar de calidad y con la satisfacción de nuestros clientes
+          </p>
+        </article>
+        <article>
+          <figure><img src="" alt="" /><img src="" alt="" /></figure>
+          <h3>Valores</h3>
+          <p>
+            Honestidad, Responsabilidad y Ética profesional como pilares, en
+            conjunción con esfuerzo y constancia , manteniéndonos firmes a
+            nuestros principios incluso en las situaciones más adversas que
+            podamos encontrar.
+          </p>
+        </article>
+      </section>
+      <section>
+        <h2>Servicios</h2>
+        <article>
+          <figure><img src="" alt="" /></figure>
+          <h3>Lorem ipsum dolor sit amet consectetur</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article>
+          <figure><img src="" alt="" /></figure>
+          <h3>Lorem ipsum dolor sit amet consectetur</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article>
+          <figure><img src="" alt="" /></figure>
+          <h3>Lorem ipsum dolor sit amet consectetur</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article>
+          <figure><img src="" alt="" /></figure>
+          <h3>Lorem ipsum dolor sit amet consectetur</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article>
+          <figure><img src="" alt="" /></figure>
+          <h3>Lorem ipsum dolor sit amet consectetur</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article>
+          <figure><img src="" alt="" /></figure>
+          <h3>Lorem ipsum dolor sit amet consectetur</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+      </section>
     </main>
     <footer>
-        <section>
-            <figure><img src="" alt=""></figure>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <article>
-                <h3>Teléfonos:</h3>
-                <span>Fijo: (0212) 418.12.47</span><br>
-                <span>Fax: (0212) 422.23.17</span><br>
-                <span>Cel.: (0414) 131.35.07</span>
-            </article>
-            <article>
-                <h3>Emails:</h3>
-                <span>ventas@tecnomachine.net</span><br>
-                <span>tecnomachine.industrial@gmail.com</span>
-            </article>
-            <article>
-                <h3>Dirección</h3>
-                <p>Calle Principal, Casa Los Pinos Nro s/n,
-                    Urbanización Luis Hurtado, Sector San Jose, Km 12 Vía El Junquito, Caracas, Venezuela. Zona postal: 1030.</p>
-            </article>
-        </section>
-        <section>
-            <span>© 2020 Tecnomachine.</span><br>
-            <span>Todos los derechos reservados.</span>
-        </section>
+      <section>
+        <figure><img src="" alt="" /></figure>
+        <a href=""><img src="" alt="" /></a>
+        <a href=""><img src="" alt="" /></a>
+        <article>
+          <h3>Teléfonos:</h3>
+          <span>Fijo: (0212) 418.12.47</span><br />
+          <span>Fax: (0212) 422.23.17</span><br />
+          <span>Cel.: (0414) 131.35.07</span>
+        </article>
+        <article>
+          <h3>Emails:</h3>
+          <span>ventas@tecnomachine.net</span><br />
+          <span>tecnomachine.industrial@gmail.com</span>
+        </article>
+        <article>
+          <h3>Dirección</h3>
+          <p>
+            Calle Principal, Casa Los Pinos Nro s/n, Urbanización Luis Hurtado,
+            Sector San Jose, Km 12 Vía El Junquito, Caracas, Venezuela. Zona
+            postal: 1030.
+          </p>
+        </article>
+      </section>
+      <section>
+        <span>© 2020 Tecnomachine.</span><br />
+        <span>Todos los derechos reservados.</span>
+      </section>
     </footer>
-</body>
+    <script>
+      var consulta = window.matchMedia("(max-width: 480px)");
+      consulta.addListener(mediaQuery);
+
+      var burguerButton = document.getElementById("menu__button");
+      var menu = document.getElementById("menu-links");
+      function toggleMenu() {
+        menu.classList.toggle("active");
+      }
+      function showMenu() {
+        menu.classList.add("active");
+      }
+      function hideMenu() {
+        menu.classList.remove("active");
+      }
+
+      function mediaQuery() {
+        if (consulta.matches) {
+          // si se cumple hagamos esto
+          console.log("se cumplió la condicion");
+          burguerButton.addEventListener("touchstart", toggleMenu);
+        } else {
+          burguerButton.removeEventListener("touchstart", toggleMenu);
+          // si no se cumple hagamos esto
+          console.log("no se cumplió la condicion");
+        }
+      }
+      mediaQuery();
+    </script>
+  </body>
 </html>

@@ -6,3 +6,105 @@
 html {
   font-size: 62.5%;
 }
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+header {
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+/*menu movil visible*/
+.menu {
+  width: 100%;
+  height: 4.8rem;
+  background-color: rgba(0, 0, 0, 0.32);
+  padding: 0 5.47vw;
+  position: fixed;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, auto) 1fr;
+  grid-column-gap: 5px;
+  justify-items: center;
+  align-items: center;
+}
+.menu__button {
+  background: none;
+  border-style: none;
+  margin-right: auto;
+  width: 2.7rem;
+  height: 1.8rem;
+}
+.menu__button img {
+  width: 100%;
+}
+.menu__logo {
+  width: 15.7rem;
+  height: 2.34rem;
+  margin-left: auto;
+}
+.menu__logo img {
+  width: 100%;
+}
+/*fin menu movil visible*/
+/*links resposive*/
+.menu-links {
+  display: none;
+}
+/*fondo banner*/
+.banner {
+  width: 100%;
+  height: auto;
+}
+.banner__img {
+  width: 100%;
+  filter: brightness(0.5);
+}
+/*fin fondo banner*/
+/*presentacion - headers bienvenida*/
+.presentation{
+  position: absolute;
+  z-index: 1;
+  top: 7.2rem;
+  margin: 0 3.5rem;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+.presentation__logo{
+  width: 29.6rem;
+  height: 4.41rem;
+}
+.presentation__logo img {
+  width: 100%;
+}
+.presentation h1{
+  margin: .8rem 0;
+  font-size: 2.4rem;
+}
+.presentation hr{
+  height: .2rem;
+  width: 5.4rem;
+  background-color: #707070;
+  margin-bottom: .8rem;
+}
+.presentation p{
+  font-size: 1.4rem;
+}
+.form-contact{
+  background-color: rgba(26, 26, 26, .75);
+  width: 32.2rem;
+  height: 43.6rem;
+  margin-top: 1.6rem;
+}
+.presentation a{
+  align-self: center;
+  margin-top: 1.65rem;
+  height: 2.05rem;
+}
+.presentation a img{
+  height: 100%;
+  width: 7.245rem;
+}
