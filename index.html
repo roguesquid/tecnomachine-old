@@ -7,7 +7,7 @@
     <meta name="description" content="Desc. pag. david" />
     <meta name="robots" content="index, follow" />
     <title>Tecnomachine S.A.</title>
-    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicona.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/phone.css" />
   </head>
   <body>
@@ -25,13 +25,13 @@
       <nav class="menu-links" id="menu-links">
         <!-- links menu -->
         <ul>
-          <hr>
-          <li><a href="#sobre-nosotros">Inicio</a></li>
-          <hr>
-          <li><a href="#">Sobre nosotros</a></li>
-          <hr>
+          <hr />
+          <li><a href="#">Inicio</a></li>
+          <hr />
+          <li><a href="#">Sobre Nosotros</a></li>
+          <hr />
           <li><a href="#">Servicios</a></li>
-          <hr>
+          <hr />
         </ul>
       </nav>
       <!-- fin links menu -->
@@ -45,65 +45,67 @@
         <source media="(min-width:481px)" srcset=".imgs/banner-medium.jpg" />
         <img
           class="banner__img"
-          src="./images/banner-small.jpg"
+          src="./images/banner2-small.png"
           alt="banner-fondo"
-        /> 
-      </picture><!--fin banner-->
+        /> </picture
+      ><!--fin banner-->
       <section class="presentation">
         <figure class="presentation__logo">
           <img src="./images/logo.svg" alt="logo-banner" />
         </figure>
-        <h1>Soluciones en <br> electromecánica</h1>
-        <hr>
-        <p>Reparación, venta y mantenimiento de <br> equipos eléctricos</p>
-        <form class="form-contact" action=""><!-- contacto -->
+        <h1>
+          Soluciones en <br />
+          electromecánica
+        </h1>
+        <hr />
+        <p>
+          Reparación, venta y mantenimiento de <br />
+          equipos eléctricos
+        </p>
+        <form class="form-contact" action="">
+          <!-- contacto -->
           <h2>Contáctenos</h2>
-          <label>
-            <span>Nombre</span>
-            <input
-              type="text"
-              autocomplete="name"
-              minlength="2"
-              maxlength="16"
-              required
-            /> </label
-          ><br />
-          <label>
-            <span>Apellido</span>
-            <input
-              type="text"
-              autocomplete="family-name"
-              minlength="2"
-              maxlength="16"
-              required
-            /> </label
-          ><br />
-          <label>
+          <div class="form-contact-name-lastname">
+            <label class="label-contact label-contact--nombre">
+              <span>Nombre</span>
+              <input
+                type="text"
+                autocomplete="name"
+                minlength="2"
+                maxlength="16"
+                required
+              />
+            </label>
+            <label class="label-contact label-contact--apellido">
+              <span>Apellido</span>
+              <input
+                type="text"
+                autocomplete="family-name"
+                minlength="2"
+                maxlength="16"
+                required
+              />
+            </label>
+          </div>
+          <label class="label-contact label-contact--email">
             <span>Correo electrónico</span>
-            <input type="email" autocomplete="email" required /> </label
-          ><br />
-          <label>
-            <span>Empresa u Organización</span>
-            <input type="text" autocomplete="organization" required /> </label
-          ><br />
-          <label>
+            <input type="email" autocomplete="email" required />
+          </label>
+          <label class="label-contact label-contact--business">
+            <span>Empresa u organización</span>
+            <input type="text" autocomplete="organization" required />
+          </label>
+          <label class="label-contact label-contact--phone">
             <span>Teléfono</span>
-            <input
-              type="tel"
-              minlength="3"
-              maxlength="3"
-              autocomplete="tel-area-code"
-              required
-            />
-            <input
-              type="tel"
-              minlength="7"
-              maxlength="7"
-              autocomplete="tel-local"
-              required
-            /> </label
-          ><br />
-          <label>
+              <input
+                type="tel"
+                minlength="10"
+                maxlength="13"
+                autocomplete="tel"
+                required
+              />
+          </label>
+          <label class="label-contact label-contact--selector">
             <span>Servicio a solicitar</span>
             <select name="" id="">
               <option disabled selected>Elegir un servicio</option>
@@ -112,11 +114,45 @@
               <option value="3">3</option>
               <option value="4">4</option>
               <option value="5">5</option>
-            </select> </label
-          ><br />
+            </select>
+          </label>
           <button>Enviar</button>
-        </form><!-- fin contacto -->
+        </form>
+        <!-- fin contacto -->
         <a href="#"><img src="./images/down_arrow.svg" alt="drop-down" /></a>
+      </section>
+      <!-- <section>
+        <h2>Servicios</h2>
+        <article>
+          <figure><img src="" alt="" /></figure>
+          <h3>Lorem ipsum dolor sit amet consectetur</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article>
+          <figure><img src="" alt="" /></figure>
+          <h3>Lorem ipsum dolor sit amet consectetur</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article>
+          <figure><img src="" alt="" /></figure>
+          <h3>Lorem ipsum dolor sit amet consectetur</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article>
+          <figure><img src="" alt="" /></figure>
+          <h3>Lorem ipsum dolor sit amet consectetur</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article>
+          <figure><img src="" alt="" /></figure>
+          <h3>Lorem ipsum dolor sit amet consectetur</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article>
+          <figure><img src="" alt="" /></figure>
+          <h3>Lorem ipsum dolor sit amet consectetur</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
       </section>
       <section>
         <div></div>
@@ -151,40 +187,7 @@
             podamos encontrar.
           </p>
         </article>
-      </section>
-      <section>
-        <h2>Servicios</h2>
-        <article>
-          <figure><img src="" alt="" /></figure>
-          <h3>Lorem ipsum dolor sit amet consectetur</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-        <article>
-          <figure><img src="" alt="" /></figure>
-          <h3>Lorem ipsum dolor sit amet consectetur</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-        <article>
-          <figure><img src="" alt="" /></figure>
-          <h3>Lorem ipsum dolor sit amet consectetur</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-        <article>
-          <figure><img src="" alt="" /></figure>
-          <h3>Lorem ipsum dolor sit amet consectetur</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-        <article>
-          <figure><img src="" alt="" /></figure>
-          <h3>Lorem ipsum dolor sit amet consectetur</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-        <article>
-          <figure><img src="" alt="" /></figure>
-          <h3>Lorem ipsum dolor sit amet consectetur</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-      </section>
+      </section> -->
     </main>
     <footer>
       <section>
@@ -193,13 +196,13 @@
         <a href=""><img src="" alt="" /></a>
         <article>
           <h3>Teléfonos:</h3>
-          <span>Fijo: (0212) 418.12.47</span><br />
-          <span>Fax: (0212) 422.23.17</span><br />
+          <span>Fijo: (0212) 418.12.47</span>
+          <span>Fax: (0212) 422.23.17</span>
           <span>Cel.: (0414) 131.35.07</span>
         </article>
         <article>
           <h3>Emails:</h3>
-          <span>ventas@tecnomachine.net</span><br />
+          <span>ventas@tecnomachine.net</span>
           <span>tecnomachine.industrial@gmail.com</span>
         </article>
         <article>
@@ -212,7 +215,7 @@
         </article>
       </section>
       <section>
-        <span>© 2020 Tecnomachine.</span><br />
+        <span>© 2020 Tecnomachine.</span>
         <span>Todos los derechos reservados.</span>
       </section>
     </footer>
