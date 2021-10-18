@@ -243,3 +243,28 @@ h3{
   top: 1.35rem;
   box-shadow: 0rem 3px 6px rgba(0, 0, 0, 0.16);
 }
+/* fin sobre nosotros */
+/* servicios */
+.services{
+  margin: 0 1.6rem;
+}
+.services article{
+  margin-bottom: 2.4rem;
+}
+.services h2{
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+.services h3{
+  margin: .8rem 0 1.6rem 0;
+  font-size: 1.8rem;
+}
+.services ul{
+  font-size: 1.4rem;
+  margin-left: 2.4rem;
+
+}
+.img-servicios{
+  width: 28.6rem;
+  box-shadow: 0rem 2px 4px rgba(0, 0, 0, 0.16);
+}
