@@ -268,3 +268,60 @@ h3{
   width: 28.6rem;
   box-shadow: 0rem 2px 4px rgba(0, 0, 0, 0.16);
 }
+/* fin servicios */
+/* footer */
+.footer-arriba{
+  background-color: #252525;
+  padding: 0 2.8rem 1.6rem 2.8rem;
+}
+footer h3, 
+footer span, 
+footer p{
+  color: #e9e9e9;
+  font-size: 1.6rem;
+}
+footer span,
+footer p{
+  font-weight: 300;
+}
+.footer-arriba h3{
+  margin-bottom: .8rem;
+}
+.footer-arriba a img{
+  width: 2.4rem;
+  margin-top: .4rem;
+}
+.footer-arriba figure{
+  margin-top: 1.6rem;
+  width: 19.5rem;
+}
+.footer-arriba figure img{
+  width: 100%;
+  height: 100%;
+  margin-top: 1.6rem;
+}
+.footer-arriba article:first-of-type {
+  margin-top: 2.4rem;
+}
+.footer-arriba article{
+  margin-bottom: 1.6rem;
+}
+.footer-arriba article span{
+  display: block;
+  margin-bottom: .4rem;
+}
+.footer-arriba article span:last-of-type{
+  margin-bottom: 0;
+}
+.footer-arriba article:last-of-type {
+  margin-bottom: 0;
+}
+.footer-abajo{
+  background-color: #111111;
+  padding: .8rem 0;
+}
+.footer-abajo span{
+  display: block;
+  text-align: center;
+  font-weight: 300;
+}
