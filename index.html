@@ -7,12 +7,21 @@
     <meta name="description" content="Desc. pag. david" />
     <meta name="robots" content="index, follow" />
     <title>Tecnomachine S.A.</title>
-    <link rel="shortcut icon" href="./images/favicona.svg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicona.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./styles/phone.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/desktop.css"
+      media="screen and (min-width:1024px)"
+    />
   </head>
   <body>
     <header>
-      <div class="menu">
+      <div class="menu" id="menu">
         <!-- menu movil visible -->
         <button class="menu__button" id="menu__button">
           <img src="./images/burger_menu.svg" alt="menu" />
@@ -20,6 +29,13 @@
         <figure class="menu__logo">
           <img src="./images/logo.svg" alt="logo" />
         </figure>
+        <nav>
+          <ul>
+            <li><a href="#" class="menu-link--active">Inicio</a></li>
+            <li><a href="#about-us">Sobre Nosotros</a></li>
+            <li><a href="#services">Servicios</a></li>
+          </ul>
+        </nav>
       </div>
       <!-- fin menu movil visible -->
       <nav class="menu-links" id="menu-links">
@@ -28,9 +44,9 @@
           <hr />
           <li><a href="#">Inicio</a></li>
           <hr />
-          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#about-us">Sobre Nosotros</a></li>
           <hr />
-          <li><a href="#">Servicios</a></li>
+          <li><a href="#services">Servicios</a></li>
           <hr />
         </ul>
       </nav>
@@ -40,12 +56,15 @@
     <main>
       <picture class="banner"
         ><!--banner-->
-        <source media="(min-width:1025px)" srcset=".imgs/banner-xlarge.jpg" />
-        <source media="(min-width:769px)" srcset=".imgs/banner-large.jpg" />
-        <source media="(min-width:481px)" srcset=".imgs/banner-medium.jpg" />
+        <source
+          media="(min-width:1025px)"
+          srcset="./images/banner-xlarge.jpg"
+        />
+        <source media="(min-width:769px)" srcset="./images/banner-large.jpg" />
+        <source media="(min-width:481px)" srcset="./images/banner-medium.jpg" />
         <img
           class="banner__img"
-          src="./images/banner-small.png"
+          src="./images/banner-small.jpg"
           alt="banner-fondo"
         /> </picture
       ><!--fin banner-->
@@ -97,32 +116,60 @@
           </label>
           <label class="label-contact label-contact--phone">
             <span>Teléfono</span>
-              <input
-                type="tel"
-                minlength="10"
-                maxlength="13"
-                autocomplete="tel"
-                required
-              />
+            <input
+              type="tel"
+              minlength="10"
+              maxlength="13"
+              autocomplete="tel"
+              required
+            />
           </label>
           <label class="label-contact label-contact--selector">
             <span>Servicio a solicitar</span>
             <select name="" id="">
               <option disabled selected>Elegir un servicio</option>
-              <option value="Instalación de plantas eléctricas">Instalación de planta eléctrica</option>
               <option value="Cálculo de carga">Cálculo de carga</option>
-              <option value="Venta de plantas eléctricas con motores Jhon Deere e Iveco">Venta de plantas eléctricas</option>
-              <option value="Reparación de plantas eléctricas">Reparación de planta eléctrica</option>
-              <option value="Venta de transferencias automáticas de carga">Venta de transferencias automáticas de carga</option>
-              <option value="Venta de transferencias básicas">Venta de transferencias básicas</option>
-              <option value="Venta de módulos de control para ATS">Venta de módulos de control para ATS</option>
-              <option value="Instalación de transferencias automáticas">Instalación de transferencias automáticas</option>
-              <option value="Instalación de tableros de control y potencia">Instalación de tableros de control y potencia</option>
-              <option value="Venta de reguladores de voltaje">Venta de reguladores de voltaje</option>
-              <option value="Venta de gobernadores electrónicos">Venta de gobernadores electrónicos</option>
-              <option value="Rebobinado de alternadores">Rebobinado de alternadores</option>
-              <option value="Rebobinado de motores AC">Rebobinado de motores AC</option>
-              <option value="Rebobinado de motores y generadores DC">Rebobinado de motores y generadores DC</option>  
+              <option value="Instalación de plantas eléctricas">
+                Instalación de planta eléctrica
+              </option>
+              <option value="Instalación de tableros de control y potencia">
+                Instalación de tableros de control y potencia
+              </option>
+              <option value="Instalación de transferencias automáticas">
+                Instalación de transferencias automáticas
+              </option>
+              <option value="Rebobinado de alternadores">
+                Rebobinado de alternadores
+              </option>
+              <option value="Rebobinado de motores AC">
+                Rebobinado de motores AC
+              </option>
+              <option value="Rebobinado de motores y generadores DC">
+                Rebobinado de motores y generadores DC
+              </option>
+              <option value="Reparación de plantas eléctricas">
+                Reparación de planta eléctrica
+              </option>
+              <option value="Venta de gobernadores electrónicos">
+                Venta de gobernadores electrónicos
+              </option>
+              <option value="Venta de módulos de control para ATS">
+                Venta de módulos de control para ATS
+              </option>
+              <option
+                value="Venta de plantas eléctricas con motores Jhon Deere e Iveco"
+              >
+                Venta de plantas eléctricas
+              </option>
+              <option value="Venta de reguladores de voltaje">
+                Venta de reguladores de voltaje
+              </option>
+              <option value="Venta de transferencias automáticas de carga">
+                Venta de transferencias automáticas de carga
+              </option>
+              <option value="Venta de transferencias básicas">
+                Venta de transferencias básicas
+              </option>
             </select>
           </label>
           <button>Enviar</button>
@@ -130,105 +177,179 @@
         <!-- fin contacto -->
         <a href="#"><img src="./images/down_arrow.svg" alt="drop-down" /></a>
       </section>
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <h2>Sobre nosotros</h2>
         <figure>
-          <img src="./images/background-about-us.svg" alt="background-about-us">
+          <img
+            src="./images/background-about-us.gif"
+            alt="background-about-us"
+          />
         </figure>
         <article>
-          <picture>
-            <img class="background-img-about-us" src="./images/mision.svg" alt="fondo-imagen-mision" />
-          </picture>
-          <picture>
-            <img class="img-about-us" src="./images/mision.jpg" alt="imagen-mision" />
-          </picture>
-          <h3>Misión</h3>
-          <p>
-            Ser referencia técnica en nuestras áreas de acción: reparaciones y montajes electromecánicos, embobinado y  otros trabajos en nuestra área; generando valor para nuestros accionistas, nuestros trabajadores y nuestro entorno.
-          </p>
+          <div class="about-us__img">
+            <picture>
+              <img
+                class="background-img-about-us"
+                src="./images/mision.svg"
+                alt="fondo-imagen-mision"
+              />
+            </picture>
+            <picture>
+              <img
+                class="img-about-us"
+                src="./images/mision.jpg"
+                alt="imagen-mision"
+              />
+            </picture>
+          </div>
+          <div class="about-us__text">
+            <h3>Misión</h3>
+            <p>
+              Ser referencia técnica en nuestras áreas de acción: reparaciones y
+              montajes electromecánicos, embobinado y otros trabajos en nuestra
+              área; generando valor para nuestros accionistas, nuestros
+              trabajadores y nuestro entorno.
+            </p>
+          </div>
         </article>
         <article>
-          <picture>
-            <img class="background-img-about-us" src="./images/vision.svg" alt="fondo-imagen-vision" />
-          </picture>
-          <picture>
-            <img class="img-about-us" src="./images/vision.jpg" alt="imagen-vision" />
-          </picture>
-          <h3>Visión</h3>
-          <p>
-            Ser una empresa líder local y nacional, comprometida con un alto estándar de calidad y  con la satisfacción de nuestros clientes.
-          </p>
+          <div class="about-us__img">
+            <picture>
+              <img
+                class="background-img-about-us"
+                src="./images/vision.svg"
+                alt="fondo-imagen-vision"
+              />
+            </picture>
+            <picture>
+              <img
+                class="img-about-us"
+                src="./images/vision.jpg"
+                alt="imagen-vision"
+              />
+            </picture>
+          </div>
+          <div class="about-us__text">
+            <h3>Visión</h3>
+            <p>
+              Ser una empresa líder local y nacional, comprometida con un alto
+              estándar de calidad y con la satisfacción de nuestros clientes.
+            </p>
+          </div>
         </article>
         <article>
-          <picture>
-            <img class="background-img-about-us" src="./images/valores.svg" alt="fondo-imagen-valores" />
-          </picture>
-          <picture>
-            <img class="img-about-us" src="./images/valores.jpg" alt="imagen-valores" />
-          </picture>
-          <h3>Valores</h3>
-          <p>
-            Honestidad, Responsabilidad y Ética profesional como pilares, en conjunción con esfuerzo y constancia , manteniéndonos firmes a nuestros principios incluso en las situaciones más adversas que podamos encontrar.
-          </p>
+          <div class="about-us__img">
+            <picture>
+              <img
+                class="background-img-about-us"
+                src="./images/valores.svg"
+                alt="fondo-imagen-valores"
+              />
+            </picture>
+            <picture>
+              <img
+                class="img-about-us"
+                src="./images/valores.jpg"
+                alt="imagen-valores"
+              />
+            </picture>
+          </div>
+          <div class="about-us__text">
+            <h3>Valores</h3>
+            <p>
+              Honestidad, Responsabilidad y Ética profesional como pilares, en
+              conjunción con esfuerzo y constancia , manteniéndonos firmes a
+              nuestros principios incluso en las situaciones más adversas que
+              podamos encontrar.
+            </p>
+          </div>
         </article>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <h2>Servicios</h2>
         <article>
           <picture>
-            <img class="img-servicios" src="./images/plantas-electricas.jpg" alt="" />
+            <img
+              class="img-servicios"
+              src="./images/plantas-electricas.jpg"
+              alt=""
+            />
           </picture>
-          <h3>Plantas Eléctricas</h3>
-          <ul>
-            <li>Instalación de plantas eléctricas.</li>
-            <li>Cálculo de carga.</li>
-            <li>Venta de plantas eléctricas con motores Jhon Deere e Iveco.</li>
-            <li>Reparación de plantas eléctricas.</li>
-          </ul>
+          <div>
+            <h3>Plantas Eléctricas</h3>
+            <ul>
+              <li>Instalación de plantas eléctricas.</li>
+              <li>Cálculo de carga.</li>
+              <li>
+                Venta de plantas eléctricas con motores Jhon Deere e Iveco.
+              </li>
+              <li>Reparación de plantas eléctricas.</li>
+            </ul>
+          </div>
         </article>
         <article>
           <picture>
-            <img class="img-servicios" src="./images/transferencias-automaticas.jpg" alt="" />
+            <img
+              class="img-servicios"
+              src="./images/transferencias-automaticas.jpg"
+              alt=""
+            />
           </picture>
-          <h3>Transferencias Automáticas</h3>
-          <ul>
-            <li>Venta de transferencias automáticas de carga (precios especiales para instaladores).</li>
-            <li>Venta de transferencias básicas (precios especiales para instaladores).</li>
-            <li>Venta de módulos de control para ATS.</li>
-            <li>Instalación de transferencias automáticas.</li>
-            <li>Instalación de tableros de control y potencia.</li>
-          </ul>
+          <div>
+            <h3>Transferencias Automáticas</h3>
+            <ul>
+              <li>
+                Venta de transferencias automáticas de carga (precios especiales
+                para instaladores).
+              </li>
+              <li>
+                Venta de transferencias básicas (precios especiales para
+                instaladores).
+              </li>
+              <li>Venta de módulos de control para ATS.</li>
+              <li>Instalación de transferencias automáticas.</li>
+              <li>Instalación de tableros de control y potencia.</li>
+            </ul>
+          </div>
         </article>
         <article>
           <picture>
             <img class="img-servicios" src="./images/repuestos.jpg" alt="" />
           </picture>
-          <h3>Repuestos Plantas Eléctricas</h3>
-          <ul>
-            <li>Venta de reguladores de voltaje.</li>
-            <li>Venta de gobernadores electrónicos.</li>
-          </ul>
+          <div>
+            <h3>Repuestos Plantas Eléctricas</h3>
+            <ul>
+              <li>Venta de reguladores de voltaje.</li>
+              <li>Venta de gobernadores electrónicos.</li>
+            </ul>
+          </div>
         </article>
         <article>
           <picture>
             <img class="img-servicios" src="./images/rebobinado.jpg" alt="" />
           </picture>
-          <h3>Rebobinado</h3>
-          <ul>
-            <li>Rebobinado de alternadores (ambos componentes: estator y rotor).</li>
-            <li>Rebobinado de motores AC.</li>
-            <li>Rebobinado de motores y generadores DC.</li>
-          </ul>
+          <div>
+            <h3>Rebobinado</h3>
+            <ul>
+              <li>
+                Rebobinado de alternadores (ambos componentes: estator y rotor).
+              </li>
+              <li>Rebobinado de motores AC.</li>
+              <li>Rebobinado de motores y generadores DC.</li>
+            </ul>
+          </div>
         </article>
       </section>
     </main>
     <footer>
       <section class="footer-arriba">
-        <figure>
-          <img src="./images/logo.svg" alt="" />
-        </figure>
-        <a href=""><img src="./images/facebook.png" alt="facebook" /></a>
-        <a href=""><img src="./images/twitter.png" alt="twitter" /></a>
+        <div>
+          <figure>
+            <img src="./images/logo.svg" alt="" />
+          </figure>
+          <a href=""><img src="./images/facebook.png" alt="facebook" /></a>
+          <a href=""><img src="./images/twitter.png" alt="twitter" /></a>
+        </div>
         <article>
           <h3>Teléfonos:</h3>
           <span>Fijo: (0212) 418.12.47</span>
@@ -259,15 +380,15 @@
       consulta.addListener(mediaQuery);
 
       var burguerButton = document.getElementById("menu__button");
-      var menu = document.getElementById("menu-links");
+      var menum = document.getElementById("menu-links");
       function toggleMenu() {
-        menu.classList.toggle("active");
+        menum.classList.toggle("active");
       }
       function showMenu() {
-        menu.classList.add("active");
+        menum.classList.add("active");
       }
       function hideMenu() {
-        menu.classList.remove("active");
+        menum.classList.remove("active");
       }
 
       function mediaQuery() {
@@ -282,6 +403,16 @@
         }
       }
       mediaQuery();
+      window.addEventListener(
+        "scroll",
+        function (evt) {
+          let darkness = window.scrollY / 428;
+          if (darkness > 0.7) darkness = 0.7;
+          else if (darkness < 0.32) darkness = 0.32;
+          menu.style.backgroundColor = "rgba(0, 0, 0, " + darkness + ")";
+        },
+        false
+      );
     </script>
   </body>
 </html>

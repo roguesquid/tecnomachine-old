@@ -10,7 +10,7 @@ html {
   font-size: 3.125vw;
 }
 body {
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
 }
 header {
   width: 100%;
@@ -38,6 +38,9 @@ h3{
   grid-column-gap: 5px;
   justify-items: center;
   align-items: center;
+}
+.menu nav{
+  display: none;
 }
 .menu__button {
   background: none;
@@ -98,7 +101,6 @@ h3{
 .banner__img {
   width: 100%;
   min-height: 646px;
-  filter: brightness(0.5);
 }
 /*fin fondo banner*/
 /*presentacion - headers bienvenida*/
@@ -133,6 +135,7 @@ h3{
 .presentation p {
   font-size: 1.4rem;
   color: #f3f3f3;
+  font-weight: 300;
 }
 .presentation a {
   align-self: center;
@@ -152,9 +155,11 @@ h3{
   height: 37.8rem;
   margin-top: 1.6rem;
   padding: 1.6rem 2rem 1.6rem 2rem;
+  border-radius: .2rem;
 }
 .form-contact h2 {
   margin: 0 auto;
+  color: #f3f3f3;
 }
 .label-contact {
   display: flex;
@@ -163,6 +168,7 @@ h3{
 }
 .form-contact span {
   font-size: 1.2rem;
+  font-weight: 300;
   margin-bottom: .4rem;
   color: #f3f3f3;
 }
@@ -197,6 +203,7 @@ h3{
   font-weight: bold;
   font-size: 1.9rem;
   background-color: #D10012;
+  font-family: "Roboto";
 }
 /* fin formulario contacto */
 /* inicio sobre nosotros */
