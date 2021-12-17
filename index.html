@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Desc. pag. david" />
     <meta name="robots" content="index, follow" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Tecnomachine S.A.</title>
     <link
       rel="shortcut icon"
@@ -24,7 +25,8 @@
       <div class="menu" id="menu">
         <!-- menu movil visible -->
         <button class="menu__button" id="menu__button">
-          <img src="./images/burger_menu.svg" alt="menu" />
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
         </button>
         <figure class="menu__logo">
           <img src="./images/logo.svg" alt="logo" />
@@ -42,11 +44,11 @@
         <!-- links menu -->
         <ul>
           <hr />
-          <li><a href="#">Inicio</a></li>
+          <li><a class="menuItem" href="#">Inicio</a></li>
           <hr />
-          <li><a href="#about-us">Sobre Nosotros</a></li>
+          <li><a class="menuItem" href="#about-us">Sobre Nosotros</a></li>
           <hr />
-          <li><a href="#services">Servicios</a></li>
+          <li><a class="menuItem" href="#services">Servicios</a></li>
           <hr />
         </ul>
       </nav>
@@ -57,11 +59,11 @@
       <picture class="banner"
         ><!--banner-->
         <source
-          media="(min-width:1025px)"
+          media="(min-width:1024px)"
           srcset="./images/banner-xlarge.jpg"
         />
-        <source media="(min-width:769px)" srcset="./images/banner-large.jpg" />
-        <source media="(min-width:481px)" srcset="./images/banner-medium.jpg" />
+        <!-- <source media="(min-width:769px)" srcset="./images/banner-large.jpg" />
+        <source media="(min-width:481px)" srcset="./images/banner-medium.jpg" /> -->
         <img
           class="banner__img"
           src="./images/banner-small.jpg"
@@ -81,13 +83,21 @@
           Reparación, venta y mantenimiento de <br />
           equipos eléctricos
         </p>
-        <form class="form-contact" action="">
+        <form
+          class="form-contact"
+          action="https://formsubmit.co/1c1710732d7722a14add36ddbafb61fa"
+          method="POST"
+        >
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="tecnomachine.net">
           <!-- contacto -->
           <h2>Contáctenos</h2>
           <div class="form-contact-name-lastname">
             <label class="label-contact label-contact--nombre">
               <span>Nombre</span>
               <input
+                name="Nombre"
                 type="text"
                 autocomplete="name"
                 minlength="2"
@@ -98,6 +108,7 @@
             <label class="label-contact label-contact--apellido">
               <span>Apellido</span>
               <input
+                name="Apellido"
                 type="text"
                 autocomplete="family-name"
                 minlength="2"
@@ -108,15 +119,21 @@
           </div>
           <label class="label-contact label-contact--email">
             <span>Correo electrónico</span>
-            <input type="email" autocomplete="email" required />
+            <input name="Email" type="email" autocomplete="email" required />
           </label>
           <label class="label-contact label-contact--business">
             <span>Empresa u organización</span>
-            <input type="text" autocomplete="organization" required />
+            <input
+              name="Empresa"
+              type="text"
+              autocomplete="organization"
+              required
+            />
           </label>
           <label class="label-contact label-contact--phone">
             <span>Teléfono</span>
             <input
+              name="Telefono"
               type="tel"
               minlength="10"
               maxlength="13"
@@ -126,7 +143,7 @@
           </label>
           <label class="label-contact label-contact--selector">
             <span>Servicio a solicitar</span>
-            <select name="" id="">
+            <select name="Servicio a solicitar" id="">
               <option disabled selected>Elegir un servicio</option>
               <option value="Cálculo de carga">Cálculo de carga</option>
               <option value="Instalación de plantas eléctricas">
@@ -181,7 +198,7 @@
         <h2>Sobre nosotros</h2>
         <figure>
           <img
-            src="./images/background-about-us.gif"
+            src="./images/background-about-us.svg"
             alt="background-about-us"
           />
         </figure>
@@ -376,40 +393,41 @@
       </section>
     </footer>
     <script>
-      var consulta = window.matchMedia("(max-width: 480px)");
-      consulta.addListener(mediaQuery);
+      const menu = document.querySelector(".menu-links");
+      const menuItems = document.querySelectorAll(".menuItem");
+      const hamburger= document.querySelector(".menu__button");
+      const closeIcon= document.querySelector(".closeIcon");
+      const menuIcon = document.querySelector(".menuIcon");
 
-      var burguerButton = document.getElementById("menu__button");
-      var menum = document.getElementById("menu-links");
       function toggleMenu() {
-        menum.classList.toggle("active");
-      }
-      function showMenu() {
-        menum.classList.add("active");
-      }
-      function hideMenu() {
-        menum.classList.remove("active");
-      }
-
-      function mediaQuery() {
-        if (consulta.matches) {
-          // si se cumple hagamos esto
-          console.log("se cumplió la condicion");
-          burguerButton.addEventListener("touchstart", toggleMenu);
+        if (menu.classList.contains("showMenu")) {
+          menu.classList.remove("showMenu");
+          closeIcon.style.display = "none";
+          menuIcon.style.display = "block";
         } else {
-          burguerButton.removeEventListener("touchstart", toggleMenu);
-          // si no se cumple hagamos esto
-          console.log("no se cumplió la condicion");
+          menu.classList.add("showMenu");
+          closeIcon.style.display = "block";
+          menuIcon.style.display = "none";
         }
       }
-      mediaQuery();
+
+      hamburger.addEventListener("click", toggleMenu);
+
+      menuItems.forEach( 
+        function(menuItem) { 
+          menuItem.addEventListener("click", toggleMenu);
+        }
+      )
+
+      //scroll header mas negro
+      const menuVisible = document.querySelector(".menu")
       window.addEventListener(
         "scroll",
         function (evt) {
           let darkness = window.scrollY / 428;
-          if (darkness > 0.7) darkness = 0.7;
+          if (darkness > 0.8) darkness = 0.8;
           else if (darkness < 0.32) darkness = 0.32;
-          menu.style.backgroundColor = "rgba(0, 0, 0, " + darkness + ")";
+          menuVisible.style.backgroundColor = "rgba(0, 0, 0, " + darkness + ")";
         },
         false
       );

@@ -60,6 +60,9 @@ html {
 .presentation p{
     font-size: 2.8rem;
 }
+.presentation a img{
+    display: none;
+}
 .form-contact{
     width: 35.2rem;
     height: 47.4rem;
